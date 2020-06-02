@@ -5,7 +5,7 @@ Yet in some cases,
 * it might not be possible or allowed to implement a custom console using Swing, JavaFX or other GUI-related libraries,
 * shipping bridge starting files (like bat, sh, etc.) can suck.
 
-This code snippet is exactly for those cases, where you need to make sure that double clicking the jar does actually open a console window where the program runs. It basically works by getting the path of the executed jar during run and then creating a new process by opening itself with OS dependent commands / terminals. This usually works nicely across Windows (cmd) and Mac (terminal). For Linux, as there are many distributions containing different terminal binaries, there is some terminal detection work to do.
+This code snippet is exactly for those cases, where you need to make sure that double clicking the jar does actually open a console window where the program runs. It basically works by getting the path of the executed jar during run and then creating a new process by opening itself with OS dependent commands / terminals. Afterwards the original process is destroyed. This usually works nicely across Windows (cmd) and Mac (terminal). For Linux, as there are many distributions containing different terminal binaries, there is some terminal detection work to do.
 
 Small but nice extra: Setting the terminal title (Windows and Mac only as of now)
 
