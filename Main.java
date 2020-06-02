@@ -19,7 +19,7 @@ public class Main {
 	    	// Check the current platform...
 	    	if(systemName.contains("windows")) {
 	    		// then start the new process with the OS or terminal dependent commands
-	    		new ProcessBuilder(new String[] {"cmd", "/k", "start", windowTitle, "java", "-jar", decodedPath.substring(1), "run"}).start();
+	    		new ProcessBuilder(new String[] {"cmd", "/k", "start", "\""+windowTitle+"\"", "java", "-jar", decodedPath.substring(1), "run"}).start();
 	    	} else if(systemName.contains("mac")) {
 	    		new ProcessBuilder(new String[] {"/bin/bash", "-c", "java", "-jar", decodedPath, "run"}).start();
 	    	} else if(systemName.contains("linux")) {
