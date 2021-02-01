@@ -1,5 +1,5 @@
 # java-selfconsole
-**ATTENTION: You can find a much better version here: https://github.com/jredfox/SelfCommandPrompt**
+**ATTENTION: You can find a much better version here: https://github.com/jredfox/SelfCommandPrompt**  
 Double-clicking a jar file to open it is commonly associated with the "javaw" command and does not show a console upon start.
 Yet in some cases,
 * you don't want the end user to have to open the jar directly through a console,
